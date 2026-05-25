@@ -13,7 +13,7 @@
 
     <style>
         :root {
-            --primary-color: #ffcc00; /* Цвят, привличащ вниманието при спешност */
+            --primary-color: #ffcc00; 
             --dark-color: #1a1a1a;
             --light-color: #f4f4f4;
             --text-color: #333;
@@ -38,9 +38,7 @@
             color: white;
             text-align: center;
             padding: 20px 10px;
-            position: sticky;
-            top: 0;
-            z-index: 100;
+            /* Премахнато position: sticky за по-добро превъртане на телефони */
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
 
@@ -66,7 +64,6 @@
             margin-bottom: 10px;
         }
 
-        /* Огромният Call-to-Action бутон за телефонно обаждане */
         .cta-button {
             display: block;
             background-color: var(--success-color);
@@ -96,7 +93,7 @@
             background: white;
             padding: 20px;
             border-radius: 8px;
-            margin-top: -10px;
+            margin-top: 10px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.05);
         }
 
@@ -164,7 +161,6 @@
             text-decoration: none;
         }
 
-        /* Оптимизация за десктоп */
         @media(min-width: 768px) {
             header h1 { font-size: 2.5rem; }
             .container { padding: 40px 20px; }
@@ -232,4 +228,40 @@
                 <li><strong>Аварийно отваряне</strong> на блиндирани, дървени и алуминиеви врати без разбиване.</li>
                 <li><strong>Автоключарски услуги</strong> — отключване на автомобили от всички марки при забравени или изгубени ключове.</li>
                 <li><strong>Смяна и ремонт</strong> на брави, патрони, дръжки и системи за сигурност.</li>
-                <li><strong>Експресна реакция</strong> — мобилни екипи, разположени на стратегически локации за бърз адрес
+                <li><strong>Експресна реакция</strong> — мобилни екипи, разположени на стратегически локации за бърз адрес.</li>
+                <li><strong>Професионална техника</strong> и сертифицирани майстори с опит.</li>
+            </ul>
+        </section>
+
+        <section class="regions">
+            <h2>Райони на Покритие</h2>
+            <p>Нашите екипи са на Ваше разположение във всички квартали на град Варна и населените места в община Аксаково:</p>
+            <div class="region-list">
+                <div class="region-item">гр. Аксаково</div>
+                <div class="region-item">Варна Център</div>
+                <div class="region-item">кв. Владиславово</div>
+                <div class="region-item">кв. Младост</div>
+                <div class="region-item">кв. Аспарухово</div>
+                <div class="region-item">кв. Виница</div>
+                <div class="region-item">с. Зорница</div>
+                <div class="region-item">кв. Левски</div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Emergency Project Varna. Всички права запазени.</p>
+        <p>Разработено от <a href="https://lifeweaverlifeweaver-hash.github.io/L-Weaver-Studio.github.io/" target="_blank">L-Weaver Studio</a></p>
+    </footer>
+
+    <script>
+    document.querySelector('.cta-button').addEventListener('click', function() {
+        if (typeof umami !== 'undefined') {
+            umami.track('Call Button Clicked', { region: 'Varna-Aksakovo' });
+        }
+    });
+    </script>
+
+</body>
+</html>
