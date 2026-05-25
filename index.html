@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Аварийни и Спешни Услуги Варна и Аксаково | Денонощна Помощ 24/7</title>
-    <meta name="description" content="Единен портал за спешни услуги в регион Варна и община Аксаково. Денонощен ключар, водопроводчик, електротехник, пътна помощ, частни линейки и траурни услуги.">
+    <meta name="description" content="Единен портал за спешни услуги във Варна и Аксаково. Денонощен ключар, водопроводчик, ел. услуги, пътна помощ, линейки и траурни услуги.">
     <meta name="robots" content="index, follow">
     
     <link rel="canonical" href="https://lifeweaverlifeweaver-hash.github.io/L-Weaver-Studio.github.io/">
-
+    
     <meta name="google-site-verification" content="4dxUN-tDnTBp_uPxTv9tkDMrcSSbV1RkknRBPLsktvw" />
-
+    
     <script async src="https://cloud.umami.is/script.js" data-website-id="ccfd592a-524d-474d-801d-d2e0d34f9790"></script>
 
     <style>
@@ -32,75 +32,59 @@
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', sans-serif;
             scroll-behavior: smooth;
         }
 
         body {
             background-color: var(--light-color);
             color: var(--text-color);
-            line-height: 1.6;
+            line-height: 1.5;
         }
 
         header {
             background-color: var(--dark-color);
             color: white;
             text-align: center;
-            padding: 30px 15px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 25px 15px;
         }
 
         .emergency-badge {
             background-color: var(--emergency-red);
             color: white;
-            padding: 5px 12px;
+            padding: 4px 10px;
             font-weight: bold;
             border-radius: 5px;
             display: inline-block;
-            margin-bottom: 12px;
-            animation: blink 1.5s infinite;
-        }
-
-        @keyframes blink {
-            0% { opacity: 1; }
-            50% { opacity: 0.6; }
-            100% { opacity: 1; }
+            margin-bottom: 10px;
+            font-size: 0.9rem;
         }
 
         header h1 {
-            font-size: 1.8rem;
-            margin-bottom: 15px;
+            font-size: 1.6rem;
+            margin-bottom: 5px;
         }
 
         .quick-nav {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-            margin: 20px auto 0 auto;
-            max-width: 500px;
+            gap: 8px;
+            margin-top: 15px;
         }
 
         .nav-card {
             background: rgba(255, 255, 255, 0.1);
             color: white;
             text-decoration: none;
-            padding: 10px 5px;
+            padding: 12px 5px;
             border-radius: 6px;
-            font-size: 0.8rem;
+            font-size: 0.85rem;
             font-weight: bold;
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 5px;
-            border: 1px solid rgba(255,255,255,0.1);
-        }
-
-        .nav-card:active {
-            background: rgba(255, 255, 255, 0.2);
-        }
-
-        .nav-icon {
-            font-size: 1.4rem;
+            border: 1px solid rgba(255,255,255,0.05);
         }
 
         .container {
@@ -112,37 +96,35 @@
         .services-list {
             display: flex;
             flex-direction: column;
-            gap: 20px;
-            margin-top: 10px;
+            gap: 15px;
         }
 
         .service-card {
             background: white;
-            padding: 20px;
+            padding: 15px;
             border-radius: 8px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
             border-left: 6px solid var(--dark-color);
         }
 
         .service-card h2 {
-            font-size: 1.4rem;
-            margin-bottom: 10px;
-            color: var(--dark-color);
+            font-size: 1.25rem;
+            margin-bottom: 8px;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
         }
 
         .service-card ul {
             list-style-type: none;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
         }
 
         .service-card li {
-            margin-bottom: 8px;
+            margin-bottom: 5px;
+            font-size: 0.95rem;
+            padding-left: 15px;
             position: relative;
-            padding-left: 22px;
-            font-size: 1rem;
         }
 
         .service-card li::before {
@@ -170,15 +152,12 @@
             color: white;
             text-decoration: none;
             text-align: center;
-            padding: 12px;
+            padding: 10px;
             font-weight: bold;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             border-radius: 5px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: transform 0.2s;
         }
 
-        .call-btn:active { transform: scale(0.97); }
         .cb-locksmith { background-color: var(--locksmith-color); }
         .cb-plumber { background-color: var(--plumber-color); }
         .cb-electrician { background-color: var(--electrician-color); }
@@ -187,86 +166,157 @@
         .cb-funeral { background-color: var(--funeral-color); }
 
         .regions {
-            margin-top: 30px;
+            margin-top: 20px;
             background: #fff;
-            padding: 20px;
+            padding: 15px;
             border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
         }
 
         .region-list {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-            gap: 10px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
             margin-top: 10px;
         }
 
         .region-item {
             background: #eee;
-            padding: 8px;
+            padding: 6px;
             text-align: center;
             border-radius: 4px;
-            font-size: 0.9rem;
-            font-weight: 500;
+            font-size: 0.85rem;
         }
 
         footer {
             text-align: center;
-            padding: 30px 10px;
-            margin-top: 40px;
+            padding: 20px 10px;
+            margin-top: 30px;
             background-color: var(--dark-color);
             color: #888;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
         }
 
-        footer a {
-            color: var(--primary-color);
-            text-decoration: none;
-        }
-
-        @media(min-width: 768px) {
-            header h1 { font-size: 2.5rem; }
-            .quick-nav { grid-template-columns: repeat(6, 1fr); max-width: 800px; }
-            .services-list { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-        }
+        footer a { color: var(--primary-color); text-decoration: none; }
     </style>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        { "@type": "Locksmith", "name": "Спешен Ключар Варна Аксаково", "telephone": "+359884468329", "priceRange": "EUR" },
-        { "@type": "PlumbingService", "name": "Авариен Водопроводчик Варна Аксаково", "telephone": "+359884468329", "priceRange": "EUR" },
-        { "@type": "EmergencyService", "name": "Частни Линейки и Траурни Услуги Варна", "telephone": "+359884468329", "priceRange": "EUR" }
-      ]
-    }
-    </script>
 </head>
 <body>
 
     <header>
         <div class="emergency-badge">Денонощно 24/7 Единна Аварийна Линия</div>
         <h1>Аварийни Център Варна & Аксаково</h1>
-        <p>Бърза реакция и мобилни екипи на адрес до 30 минути.</p>
+        <p>Бърза реакция на адрес до 30 минути.</p>
         
         <div class="quick-nav">
-            <a href="#locksmith" class="nav-card"><span class="nav-icon">🔑</span>Ключар</a>
-            <a href="#plumber" class="nav-card"><span class="nav-icon">🚰</span>ВиК</a>
-            <a href="#electrician" class="nav-card"><span class="nav-icon">⚡</span>Ел. Услуги</a>
-            <a href="#towing" class="nav-card"><span class="nav-icon">🚗</span>Пътна П.</a>
-            <a href="#ambulance" class="nav-card"><span class="nav-icon">🚑</span>Линейка</a>
-            <a href="#funeral" class="nav-card"><span class="nav-icon">⚰️</span>Траурни</a>
+            <a href="#locksmith" class="nav-card">🔑 Ключар</a>
+            <a href="#plumber" class="nav-card">🚰 ВиК</a>
+            <a href="#electrician" class="nav-card">⚡ Ел. Техник</a>
+            <a href="#towing" class="nav-card">🚗 Пътна П.</a>
+            <a href="#ambulance" class="nav-card">🚑 Линейка</a>
+            <a href="#funeral" class="nav-card">⚰️ Траурни</a>
         </div>
     </header>
 
     <div class="container">
-        
         <div class="services-list">
             
             <section id="locksmith" class="service-card sc-locksmith">
-                <h2><span>🔑</span> Спешен Ключар</h2>
+                <h2>🔑 Спешен Ключар</h2>
                 <ul>
                     <li>Денонощно отключване на домове, офиси и сейфове.</li>
                     <li>Автоключарски услуги и отключване на заклинени коли.</li>
-                    <li>Експресна смяна на патрони, брави и дръжки.</li>
+                    <li>Експресна смяна на патрони, брави и системи.</li>
                 </ul>
+                <a href="tel:+359884468329" class="call-btn cb-locksmith" id="btn-locksmith">📞 ЗВЪННИ НА КЛЮЧАР</a>
+            </section>
+
+            <section id="plumber" class="service-card sc-plumber">
+                <h2>🚰 Спешен Водопроводчик</h2>
+                <ul>
+                    <li>Бързо отстраняване на течове и скъсани меки връзки.</li>
+                    <li>Машинно отпушване на канали, тоалетни и сифони.</li>
+                    <li>Ремонт и подмяна на спирателни кранове.</li>
+                </ul>
+                <a href="tel:+359884468329" class="call-btn cb-plumber" id="btn-plumber">📞 ЗВЪННИ НА ВиК МАСЙТОР</a>
+            </section>
+
+            <section id="electrician" class="service-card sc-electrician">
+                <h2>⚡ Авариен Електротехник</h2>
+                <ul>
+                    <li>Отстраняване на къси съединения и повреди.</li>
+                    <li>Ремонт и подмяна на гръмнали ел. табла.</li>
+                    <li>Спешно окабеляване и безопасно изолиране.</li>
+                </ul>
+                <a href="tel:+359884468329" class="call-btn cb-electrician" id="btn-electrician">📞 ЗВЪННИ НА ЕЛ. ТЕХНИК</a>
+            </section>
+
+            <section id="towing" class="service-card sc-towing">
+                <h2>🚗 Денонощна Пътна Помощ</h2>
+                <ul>
+                    <li>Репатриране на закъсали автомобили.</li>
+                    <li>Подаване на ток, доставка на гориво и смяна на гуми.</li>
+                    <li>Бързо изтегляне с лебедка от трудни терени.</li>
+                </ul>
+                <a href="tel:+359884468329" class="call-btn cb-towing" id="btn-towing">📞 ЗВЪННИ ЗА ПЪТНА ПОМОЩ</a>
+            </section>
+
+            <section id="ambulance" class="service-card sc-ambulance">
+                <h2>🚑 Частни Линейки</h2>
+                <ul>
+                    <li>Медицински транспорт на болни до дома.</li>
+                    <li>Превоз на трудноподвижни и лежащо болни лица.</li>
+                    <li>Осигуряване на медицински екипи за събития.</li>
+                </ul>
+                <a href="tel:+359884468329" class="call-btn cb-ambulance" id="btn-ambulance">📞 ИЗВИКАЙ ЛИНЕЙКА</a>
+            </section>
+
+            <section id="funeral" class="service-card sc-funeral">
+                <h2>⚰️ Траурни Услуги</h2>
+                <ul>
+                    <li>Цялостна организация на погребения и кремации.</li>
+                    <li>Денонощен специализиран транспорт на покойници.</li>
+                    <li>Осигуряване на траурни стоки и административна помощ.</li>
+                </ul>
+                <a href="tel:+359884468329" class="call-btn cb-funeral" id="btn-funeral">📞 ВРЪЗКА С ТРАУРНА АГЕНЦИЯ</a>
+            </section>
+
+        </div>
+
+        <section class="regions">
+            <h2>Райони на Покритие</h2>
+            <div class="region-list">
+                <div class="region-item">гр. Аксаково</div>
+                <div class="region-item">кв. Владиславово</div>
+                <div class="region-item">кв. Младост</div>
+                <div class="region-item">Варна Център</div>
+                <div class="region-item">кв. Аспарухово</div>
+                <div class="region-item">кв. Виница</div>
+                <div class="region-item">с. Зорница</div>
+                <div class="region-item">вилни зони / Имоти</div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Emergency Project Varna. Всички права запазени.</p>
+        <p>Разработено от <a href="https://lifeweaverlifeweaver-hash.github.io/L-Weaver-Studio.github.io/" target="_blank">L-Weaver Studio</a></p>
+    </footer>
+
+    <script>
+    function trackClick(id, name) {
+        var el = document.getElementById(id);
+        if(el) {
+            el.addEventListener('click', function() {
+                if (typeof umami !== 'undefined') { umami.track(name); }
+            });
+        }
+    }
+    trackClick('btn-locksmith', 'Locksmith Clicked');
+    trackClick('btn-plumber', 'Plumber Clicked');
+    trackClick('btn-electrician', 'Electrician Clicked');
+    trackClick('btn-towing', 'Towing Clicked');
+    trackClick('btn-ambulance', 'Ambulance Clicked');
+    trackClick('btn-funeral', 'Funeral Clicked');
+    </script>
+
+</body>
+</html>
